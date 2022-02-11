@@ -20,24 +20,24 @@
                 <div class="line" id="line3"></div>
                 <span>Fechar</span>
             </div>
-            <header>
+            <header id="home">
                 <div class="img--wrapper">
                     <img src="./images/bg.jpg" alt="Fundo início">
                 </div>
                 <div class="banner">
                     <h1>Desenvolvedor Web & Front End Designer</h1>
                     <p>Matheus Bini Caires</p>
-                    <button class="btn">Saiba mais</button>
+                    <button class="btn btn--hover">Saiba mais</button>
                 </div>
             </header>
             <aside class="sidebar">
                 <nav>
                     <ul class="menu">
                         <li class="menu--item"><a href="#" class="menu--link">Home</a></li>
-                        <li class="menu--item"><a href="#" class="menu--link">Conhecimento</a></li>
-                        <li class="menu--item"><a href="#" class="menu--link">Projetos</a></li>
-                        <li class="menu--item"><a href="#" class="menu--link">Contatos</a></li>
-                        <li class="menu--item"><a href="#" class="menu--link">Orçamento</a></li>
+                        <li class="menu--item"><a href="#knowledges" class="menu--link">Conhecimento</a></li>
+                        <li class="menu--item"><a href="#projects" class="menu--link">Projetos</a></li>
+                        <li class="menu--item"><a href="#contacts" class="menu--link">Contatos</a></li>
+                        <li class="menu--item"><a href="#budgets" class="menu--link">Orçamento</a></li>
                     </ul>
                 </nav>
                 <div class="social--media">
@@ -46,7 +46,7 @@
                     <a href="#"><i class="fab fab fab fab fa-twitter"></i></a>
                 </div>
             </aside>
-            <section class="section--knowledge">
+            <section class="section--knowledge" id="knowledges">
                 <div class="section--header">
                     <h1>Conhecimentos</h1>
                 </div>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section--projects">
+            <section class="section--projects" id="projects">
                 <div class="section--header">
                     <h1>Projetos</h1>
                 </div>
@@ -150,7 +150,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section--contact">
+            <section class="section--contact" id="contacts">
                 <div class="contact--wrapper">
                     <div class="contact--left">
 
@@ -175,7 +175,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section--budget">
+            <section class="section--budget" id="budgets">
                 <div class="budget--wrapper">
                     <h1>Faça um orçamento</h1>
                     <form>
@@ -195,11 +195,25 @@
                             </div>
                         </div>
                         <label for="prazo">Prazo</label>
-                        <input type="range" name="prazo" id="prazo">
+                        <input type="range" name="prazo" id="prazo" min="1" max="10">
+                        <label id="price">R$ 0,00</label>
                         <button class="btn btn--budget">Enviar</button>
                     </form>
                 </div>
             </section>
+            <footer>
+                <div class="footer--content">
+                    <p>Copyright &copy; 2022, MB Soft - Todos os direitos reservados</p>
+                    <div class="social--list">
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <a href="#home" id="link--top"><i class="fas fa-arrow-up"></i></a>
         </div>
     </body>
     <script src="script.js"></script>
